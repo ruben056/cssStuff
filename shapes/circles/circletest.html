@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+.circle-container {
+  display: block;
+  position: absolute;
+  top: 15.5%;
+  left: 14.5%;
+  background: #fff;
+  width: 11.5em;
+  height: 11.5em;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: green;
+  margin: 0em;
+}
+
+.horzontalline {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 50%;
+  background: green;
+  transform-origin: left center;
+}
+
+.verticalline {
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  top: 50%;
+  background: green;
+  left: 50%;
+  transform-origin: left center;
+  transform: rotate(90deg);
+}
+
+.arbeidsEnGelijkgesteldeDagen{
+  position:absolute;
+  left: 35%;
+  top:15%
+}
+
+.maandenMetArbeidsOvereenkomst{
+  position:absolute;
+  left:5%;
+  top: 55%
+}
+
+.dagenMetArbeidsOvereenkomst{
+  position: absolute;
+  left: 60%;
+  top: 55%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="circle-container">
+      <div class="horzontalline"></div>
+      <div class="verticalline"></div>
+      <span class="arbeidsEnGelijkgesteldeDagen">dagen</span>
+      <span class="maandenMetArbeidsOvereenkomst">maand</span>
+      <span class="dagenMetArbeidsOvereenkomst">dagen2</span>
+    </div>
+  </body>
+</html>
