@@ -1,0 +1,55 @@
+/* Box modeles */
+
+/*non relevant css stules*/
+.default{
+	background-color:gold;
+	border: 1px solid black;
+	margin-right: 2em;
+	margin-bottom: 1em;
+	border-top:10px solid green;
+}
+
+.default:hover{
+	box-shadow: 5px 5px 10px #000000;
+}
+
+#pagewrapper{
+	position:relative; top:50px; /*don't start at the top...*/
+}
+
+.wide{
+	width:50%;
+}
+
+.low{
+	height:10em;
+}
+
+.high{
+	height:20em
+}
+
+.container{
+	display: flex;
+	height: 25em;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex start;
+}
+.container.border{
+	border:1px solid blue;
+}
+
+div.container > span.item1{
+	order: 1;
+
+}
+
+div.container > span.item2{
+	order: 2;
+}
+
+div.container > span.item3{
+	order: 3;
+	flex-grow: 2;
+}

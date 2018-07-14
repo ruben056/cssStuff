@@ -1,0 +1,73 @@
+/* Box modeles */
+
+/*non relevant css stules*/
+.default{
+	background-color:grey;
+	border: 1px solid black;
+
+}
+#pagewrapper{
+	position:relative; top:50px; /*don't start at the top...*/
+}
+
+.container{
+	position:relative;
+}
+.container.border{
+	border:1px solid blue;
+}
+
+
+.absolutebox{
+	position:absolute;
+	overflow:auto; z-index:auto;
+	height:100px;margin:10px;padding:10px;
+	border:1px solid black;
+	background-color:gold;
+}
+.absolutebox.before{ /* positioned offset top and left */
+	left:400px;right:auto;
+	top:100px;bottom:auto;
+}
+.absolutebox.middle{ /* positioned offset top  and left */
+	left:0;right:auto;
+	top:0;bottom:auto;
+}
+.absolutebox.after{ /* positioned offset right and bottom */
+	left:auto;right:0px;
+	top:auto;bottom:50px;
+}
+
+/*floated box
+- removed from normal flow and placed above borders & backgrounds
+	of adjacent blocks
+- if all children of box are floated, the parent is collapses completely(shrink)
+- it DOES INDENT adjencent content in the flow
+- positioned vertically where it would be if not floated.
+- a floats position, padding, border and margin affect position of adjecent inline content.
+- precise location cannot be given
+width: defaults to auto (shrinkwrap)
+height: defaults to auto (shrinkwrap)
+padding: expand outer size of float
+UNIQUE FEATURES:
+- margin:do NOT collapse, +values moves the float away from its point of alignment
+ 	-values pulls the float to the other side of that same point.
+
+SELECTOR { float:LEFT_RIGHT; width:+VALUE; height:+VALUE;
+z-index:+VALUE; margin:±VALUE; padding:+VALUE;
+border:+WIDTH STYLE COLOR; background:VALUES;
+overflow:VALUE; visibility:VALUE; }
+
+*/
+
+.floatedbox{
+	float:left; overflow:auto;
+	width:220px;height:100px;
+	padding:10px;
+	margin: 10px;
+	border:1px solid black;
+	background-color: gold;
+}
+.floatedbox.around{
+	width:75px; height:auto;
+}
